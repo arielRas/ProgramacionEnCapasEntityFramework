@@ -10,9 +10,8 @@ namespace Entity
     {
         //CONSTRUCTOR
 
-        public PedidoEntity(int idPedido, int dniCliente)
+        public PedidoEntity(Int64 dniCliente)
         {
-            this.idPedido = idPedido;
             this.dniCliente = dniCliente;
         }
 
@@ -44,6 +43,11 @@ namespace Entity
         public void AsignarId(int id)
         {
             this.idPedido = id;
+        }
+
+        public void AsignarFecha(DateTime fecha)
+        {
+            this.fecha = fecha;
         }
 
         private double GetTotal()

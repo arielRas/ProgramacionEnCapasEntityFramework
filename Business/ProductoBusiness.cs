@@ -10,7 +10,7 @@ namespace Business
 {
     public class ProductoBusiness
     {
-        ProductoDao productoDao = new ProductoDao();
+        private ProductoDao productoDao = new ProductoDao();
 
         public List<ProductoEntity> GetAllProductos()
         {
