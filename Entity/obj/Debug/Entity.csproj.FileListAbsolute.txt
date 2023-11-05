@@ -4,3 +4,9 @@ C:\Users\Ariel\Desktop\ProgEnCapasEntityFramework\Entity\obj\Debug\Entity.csproj
 C:\Users\Ariel\Desktop\ProgEnCapasEntityFramework\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
 C:\Users\Ariel\Desktop\ProgEnCapasEntityFramework\Entity\obj\Debug\Entity.dll
 C:\Users\Ariel\Desktop\ProgEnCapasEntityFramework\Entity\obj\Debug\Entity.pdb
+C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\Entity\bin\Debug\Entity.dll
+C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\Entity\bin\Debug\Entity.pdb
+C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\Entity\obj\Debug\Entity.csproj.AssemblyReference.cache
+C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\Entity\obj\Debug\Entity.dll
+C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\Entity\obj\Debug\Entity.pdb

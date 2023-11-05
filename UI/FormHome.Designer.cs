@@ -153,6 +153,7 @@
             // 
             // txtBoxProducto2
             // 
+            this.txtBoxProducto2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtBoxProducto2.FormattingEnabled = true;
             this.txtBoxProducto2.Location = new System.Drawing.Point(22, 34);
             this.txtBoxProducto2.Name = "txtBoxProducto2";
@@ -264,7 +265,6 @@
             this.groupCargarPedido.Controls.Add(this.dataGridPedido);
             this.groupCargarPedido.Controls.Add(this.txtBoxCantidad);
             this.groupCargarPedido.Controls.Add(this.txtBoxProducto);
-            this.groupCargarPedido.Enabled = false;
             this.groupCargarPedido.Location = new System.Drawing.Point(189, 12);
             this.groupCargarPedido.Name = "groupCargarPedido";
             this.groupCargarPedido.Size = new System.Drawing.Size(778, 205);
@@ -363,6 +363,7 @@
             // 
             // txtBoxProducto
             // 
+            this.txtBoxProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtBoxProducto.FormattingEnabled = true;
             this.txtBoxProducto.Location = new System.Drawing.Point(22, 34);
             this.txtBoxProducto.Name = "txtBoxProducto";
@@ -382,6 +383,7 @@
             this.Controls.Add(this.groupCargarPedido);
             this.Name = "FormHome";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormHome_Load);
             this.groupModificarProducto.ResumeLayout(false);
             this.groupModificarProducto.PerformLayout();
             this.groupCargaProducto.ResumeLayout(false);
