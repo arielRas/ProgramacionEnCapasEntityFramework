@@ -15,6 +15,13 @@ namespace Entity
             this.precio = precio;
         }
 
+        public ProductoEntity(int id, string descripcion, double precio)
+        {
+            this.id = id;
+            this.descripcion = descripcion;
+            this.precio = precio;
+        }
+
         //ATRIBUTOS
         private int id;
         private string descripcion;
