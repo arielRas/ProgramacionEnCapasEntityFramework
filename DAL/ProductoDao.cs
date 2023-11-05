@@ -105,5 +105,15 @@ namespace DAL
             }
         }
 
+        public bool ExisteProducto(int id)
+        {
+            using(ContextDb context = new ContextDb())
+            {
+                if(context.Producto.Where(p => p.ID_PRODUCTO == id).Count() == 1) return true;
+
+                    return false;
+            }
+        }
+
     }
 }
