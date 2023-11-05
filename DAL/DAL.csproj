@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="ContextDb.cs" />
     <Compile Include="Pedido.cs" />
+    <Compile Include="PedidoDao.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="ProductoDao.cs" />
     <Compile Include="Producto_Pedido.cs" />

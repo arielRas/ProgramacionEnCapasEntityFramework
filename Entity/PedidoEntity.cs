@@ -16,7 +16,7 @@ namespace Entity
             this.dniCliente = dniCliente;
         }
 
-        public PedidoEntity(int idPedido, int dniCliente, DateTime fecha, List<ItemEntity> items)
+        public PedidoEntity(int idPedido, Int64 dniCliente, DateTime fecha, List<ItemEntity> items)
         {
             this.idPedido = idPedido;
             this.dniCliente = dniCliente;
@@ -40,6 +40,12 @@ namespace Entity
 
 
         //METODOS
+
+        public void AsignarId(int id)
+        {
+            this.idPedido = id;
+        }
+
         private double GetTotal()
         {
             if (Items.Count > 0) return this.Items.Select(item => item.Subtotal).Sum();

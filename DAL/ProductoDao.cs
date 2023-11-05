@@ -86,5 +86,24 @@ namespace DAL
                 throw;
             }
         }
+
+
+        internal static ProductoEntity GetProducto(int id)
+        {
+            try
+            {
+                using (ContextDb context = new ContextDb())
+                {   
+                    ProductoEntity productoEntity = context.Producto.Where(p => p.ID_PRODUCTO == id).Select(p => new ProductoEntity(p.ID_PRODUCTO, p.DESCRIPCION, Convert.ToDouble(p.PRECIO))).FirstOrDefault();
+
+                    return productoEntity;
+                }
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
     }
 }

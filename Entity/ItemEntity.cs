@@ -9,11 +9,13 @@ namespace Entity
     public class ItemEntity
     {
         //CONSTRUCTOR
-        public ItemEntity(int idPedido, ProductoEntity produto, int cantidad)
+        public ItemEntity(int idPedido, ProductoEntity produto, int cantidad, double subtotal)
         {
             this.idPedido = idPedido;
             this.producto = produto;
             this.cantidad = cantidad;
+            this.subtotal = subtotal;
+
         }
 
         //ATRIBUTOS
@@ -27,13 +29,10 @@ namespace Entity
         public int IdPedido { get => idPedido; set => idPedido = value; }
         public ProductoEntity Producto { get => producto; set => producto = value; }
         public int Cantidad { get => cantidad; set => cantidad = value; }
-        public double Subtotal { get => GetSubtotal(); }
+        public double Subtotal { get => subtotal;}
 
 
         //METODOS
-        private double GetSubtotal()
-        {
-            return Producto.Precio * Cantidad;
-        }
+        
     }
 }
