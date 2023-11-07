@@ -47,7 +47,9 @@ namespace Entity
         {
             if (instancia == null)
             {
-                return new UsuarioEntity(dni, apellido, nombre, telefono, direccion, ciudad, email);
+                instancia = new UsuarioEntity(dni, apellido, nombre, telefono, direccion, ciudad, email);
+
+                return instancia;
             }
             else
                 return instancia;

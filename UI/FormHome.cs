@@ -17,8 +17,7 @@ namespace UI
         public FormHome()
         {
             InitializeComponent();
-        }        
-        //public UsuarioEntity usuario = new UsuarioEntity(11111111, "Test", "test", "1100223344", "Calle falsa 123", "CABA", "test@test.com");//USUARIO DE PRUEBA
+        }
 
         private PedidoBusiness pedidoBusiness = new PedidoBusiness();
 
@@ -52,6 +51,8 @@ namespace UI
 
         private void FormHome_Load(object sender, EventArgs e)
         {
+            MessageBox.Show(UsuarioEntity.GetInstance().Apellido);
+
             ActualizarListaProducto();
         }
     }
