@@ -18,7 +18,7 @@ namespace UI
         {
             InitializeComponent();
         }        
-        public UsuarioEntity usuario = new UsuarioEntity(11111111, "Test", "test", "1100223344", "Calle falsa 123", "CABA", "test@test.com");//USUARIO DE PRUEBA
+        //public UsuarioEntity usuario = new UsuarioEntity(11111111, "Test", "test", "1100223344", "Calle falsa 123", "CABA", "test@test.com");//USUARIO DE PRUEBA
 
         private PedidoBusiness pedidoBusiness = new PedidoBusiness();
 

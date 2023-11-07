@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,7 +10,7 @@ namespace Entity
 {
     public class UsuarioEntity
     {
-        public UsuarioEntity(Int64 dni, string apellido, string nombre, string telefono, string direccion, string ciudad, string email)
+        private UsuarioEntity(Int64 dni, string apellido, string nombre, string telefono, string direccion, string ciudad, string email)
         {
             this.dni = dni;
             this.apellido = apellido;
@@ -27,6 +29,7 @@ namespace Entity
         private string direccion;
         private string ciudad;
         private string email;
+        private static UsuarioEntity instancia = null;
 
 
         //PROPIEDADES PUBLICAS
@@ -37,5 +40,23 @@ namespace Entity
         public string Direccion { get => direccion; }
         public string Ciudad { get => ciudad; }
         public string Email { get => email; }
+
+
+        //METODOS
+        static UsuarioEntity GetInstance(Int64 dni, string apellido, string nombre, string telefono, string direccion, string ciudad, string email)
+        {
+            if (instancia == null)
+            {
+                return new UsuarioEntity(dni, apellido, nombre, telefono, direccion, ciudad, email);
+            }
+            else
+                return instancia;
+        }
+
+        static UsuarioEntity GetInstance()
+        {
+            if (instancia != null) return instancia;
+            else return null;
+        }
     }
 }
