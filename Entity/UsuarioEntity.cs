@@ -43,7 +43,7 @@ namespace Entity
 
 
         //METODOS
-        static UsuarioEntity GetInstance(Int64 dni, string apellido, string nombre, string telefono, string direccion, string ciudad, string email)
+        public static UsuarioEntity GetInstance(Int64 dni, string apellido, string nombre, string telefono, string direccion, string ciudad, string email)
         {
             if (instancia == null)
             {
@@ -53,7 +53,7 @@ namespace Entity
                 return instancia;
         }
 
-        static UsuarioEntity GetInstance()
+        public static UsuarioEntity GetInstance()
         {
             if (instancia != null) return instancia;
             else return null;

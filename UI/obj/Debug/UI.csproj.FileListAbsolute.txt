@@ -40,3 +40,4 @@ C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\UI\obj\Debug\UI.cspro
 C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\UI\obj\Debug\UI.csproj.CopyComplete
 C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\UI\obj\Debug\UI.exe
 C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\UI\obj\Debug\UI.pdb
+C:\Users\Ariel\Desktop\Recursos\ProgEnCapasEntityFramework\UI\obj\Debug\UI.FormLogin.resources
